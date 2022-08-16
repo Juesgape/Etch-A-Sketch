@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <h1>Etch A Sketch</h1>
+
+    <div class="options">
+        <div class="buttons">
+
+            <button onclick="blackColor()" id="black">Black</button>
+
+            <button onclick="rainbowColor()" id="rainbow">Rainbow</button>
+
+            <input onclick="colorPicker()" type="color" id="pick"></input>
+
+            <button onclick="defaultColor()" id="erase">Eraser</button>
+
+            <button onclick="eraseAll()" id="eraseAll">Erase all</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="board"></div>
+    </div>
+
+    <div class="changeSizeSection">
+    <input onclick="changeSizeOfBoard()" id="sizeOfBoard" type="range" min="4" max="20">
+    </div>    
+
+    <script src="./index.js"></script>
+</body>
+</html>

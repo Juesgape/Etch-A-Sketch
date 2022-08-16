@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #6462a9f9;
+}
+h1 {
+    font-family: fantasy;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 2rem;
+    color: rgb(228, 200, 254);
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+.board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+}
+.options {
+    margin: 4rem;
+}
+.buttons {
+    margin: 0 auto;
+    max-width: 672px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.buttons button {
+    font-size: 1.8rem;
+    width: 10rem;
+    height: 3rem;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px -2px #000000;
+    transition-duration: 0.4s;
+    border: none;
+}
+.buttons button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.changeSizeSection {
+    text-align: center;
+}
+.changeSizeSection input {
+    max-width: 50rem;
+    min-width: 360px;
+    height: 5rem;
+}   
