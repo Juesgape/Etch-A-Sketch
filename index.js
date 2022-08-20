@@ -6,10 +6,9 @@ let newSize;
 
 function populateBoard(sizeOfBoard) {
     let board = document.querySelector('.board');
-
     board.style.gridTemplateColumns = `repeat(${sizeOfBoard.value}, 1fr)`;
     board.style.gridTemplateRows = `repeat(${sizeOfBoard.value}, 1fr)`;
-    board.style.border = " solid #000000"
+    board.style.border = " solid #000000";
 
     let amount = sizeOfBoard.value * sizeOfBoard.value;
 
@@ -20,7 +19,6 @@ function populateBoard(sizeOfBoard) {
 
         //Event Listener
         square.addEventListener('mouseover', () => {
-        
         if(randomColorEnable == true) {
             randomColor();
         }
@@ -35,10 +33,7 @@ function populateBoard(sizeOfBoard) {
 //event listener for changing the size of the board
 
 function changeSizeOfBoard() {
-    
     populateBoard(sizeOfBoard)
-    /* sizeOfBoard.addEventListener('input', populateBoard(newSize)); */
-    console.log('hello');
 }
 sizeOfBoard.addEventListener('input', changeSizeOfBoard);
 changeSizeOfBoard();
@@ -53,9 +48,6 @@ function randomColor() {
     let b = Math.floor(Math.random() * 256);
 
     color = `rgb(${r}, ${g}, ${b})`;
-    /* paint = color; */
-
-    console.log(color);
 }
 
 function rainbowColor() {
