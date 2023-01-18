@@ -6,6 +6,7 @@ let newSize;
 
 function populateBoard(sizeOfBoard) {
     let board = document.querySelector('.board');
+    board.innerHTML = ""; //clear the grid
     board.style.gridTemplateColumns = `repeat(${sizeOfBoard.value}, 1fr)`;
     board.style.gridTemplateRows = `repeat(${sizeOfBoard.value}, 1fr)`;
     board.style.border = " solid #000000";
@@ -76,4 +77,4 @@ function defaultColor() {
 }
 
 //change size of the board
-console.log(sizeOfBoard);
+/* console.log(sizeOfBoard); */
