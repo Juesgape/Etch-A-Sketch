@@ -22,7 +22,7 @@ function populateBoard(sizeOfBoard) {
 
         //if the screen size is a tablet or phone
         if(window.screen.width < 640) {
-            square.addEventListener('touchmove', () => {
+            square.addEventListener('touchstart', () => {
                 if(randomColorEnable == true) {
                     randomColor();
                 }
