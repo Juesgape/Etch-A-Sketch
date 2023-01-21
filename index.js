@@ -19,12 +19,24 @@ function populateBoard(sizeOfBoard) {
         square.classList = 'littleBlock'
 
         //Event Listener
-        square.addEventListener('mouseover', () => {
-        if(randomColorEnable == true) {
-            randomColor();
+
+        //if the screen size is a tablet or phone
+        if(window.screen.width < 640) {
+            square.addEventListener('touchmove', () => {
+                if(randomColorEnable == true) {
+                    randomColor();
+                }
+                square.style.backgroundColor = color;
+                })
+        //if the screen size is a laptop
+        } else {
+            square.addEventListener('mouseover', () => {
+                if(randomColorEnable == true) {
+                    randomColor();
+                }
+                square.style.backgroundColor = color;
+                })
         }
-        square.style.backgroundColor = color;
-        })
 
         square.style.backgroundColor = '#E6E3E3';
         board.appendChild(square);
