@@ -21,8 +21,8 @@ h1 {
     justify-content: center;
 }
 .board {
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     display: grid;
 }
 .options {
@@ -32,8 +32,9 @@ h1 {
     margin: 0 auto;
     max-width: 672px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 30px;
 }
 .buttons button {
     font-size: 1.8rem;
@@ -61,4 +62,11 @@ h1 {
 }   
 .littleBlock {
     transition: 0.3s ease-in-out;
+}
+
+@media (min-width: 530px) {
+    .board {
+        width: 500px;
+        height: 500px;
+    }
 }
