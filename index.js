@@ -22,11 +22,12 @@ function populateBoard(sizeOfBoard) {
 
         //if the screen size is a tablet or phone
         if(window.screen.width < 640) {
-            square.addEventListener('touchstart', () => {
+            square.addEventListener('pointermove', (e) => {
                 if(randomColorEnable == true) {
                     randomColor();
                 }
                 square.style.backgroundColor = color;
+                e.preventDefault()
                 })
         //if the screen size is a laptop
         } else {
